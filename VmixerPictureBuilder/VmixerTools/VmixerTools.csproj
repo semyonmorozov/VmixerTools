@@ -46,7 +46,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PressSharper-master\PressSharper\PressSharper.csproj">
+    <ProjectReference Include="..\..\PressSharper\PressSharper\PressSharper.csproj">
       <Project>{71289e4e-9fa1-4aa0-9aa7-eaf54470f37a}</Project>
       <Name>PressSharper</Name>
     </ProjectReference>

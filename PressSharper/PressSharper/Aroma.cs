@@ -1,8 +1,8 @@
 ﻿namespace PressSharper
 {
-    public class Flavor
+    public class Aroma
     {
+        public string Id { get; set; }
         public string Name { get; set; }
-        public int Сoncentration { get; set; }
     }
 }

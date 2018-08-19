@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
+using System.Drawing;
 using System.Linq;
+using System.Net.Mime;
 using System.Xml.Linq;
 using PressSharper;
 
@@ -11,34 +12,52 @@ namespace VmixerTools
     {
         public static void Main(string[] args)
         {
-            var receiptBuilder = new ReceiptBuilder();
-
-            var document = XDocument.Load("wordpress.2018-08-18.xml");
-            var blog = new Blog(document);
-            var posts = blog.
+            var receipts = ReceiptsParser.ParseReceipts("aromas.xml","receipts.xml","images.xml");
+         
+            Console.ReadKey();
         }
     }
 
-    public class ReceiptBuilder
+    public static class ReceiptsParser
     {
-        public Receipt Build(XElement receipt)
+        public static IEnumerable<Receipt> ParseReceipts(string aromasXml, string receiptsXml, string imageLinksXml)
         {
-            var splitedTitle = receipt.Element("title").Value.Split('\"');
-            var description = receipt
-                .Elements("postmeta")
-                .Where(m => m.Element("meta_key").Value == "<![CDATA[preview_text]]>")
-                .Select(m=>m.Element("meta_value").Value).FirstOrDefault();
-            return new Receipt
+            var aroms = ParseAromas(aromasXml).ToArray();
+            var imageLinks = ParseImageLinks(imageLinksXml).ToArray();
+            var receipts = ParseReceipts(receiptsXml).ToArray();
+            foreach (var receipt in receipts)
             {
-                Name = splitedTitle[1],
-                Manufacturer = splitedTitle[3],
-                Description = description
-            };
-        }
-    }
+                foreach (var aroma in receipt.Aromas)
+                {
+                    aroma.Key.Name = aroms.FirstOrDefault(b => b.Id == aroma.Key.Id)?.Name;
+                }
 
-    public static class PressSharperpExtensions
-    {
+                receipt.ImageName = imageLinks.FirstOrDefault(l => l.ReceiptId == receipt.Id)?.Name;
+            }
+
+            return receipts;
+        }
         
+        private static IEnumerable<ImageLink> ParseImageLinks(string source)
+        {
+            var document = XDocument.Load(source);
+            var blog = new Blog(document);
+            return blog.GetImageLinks();
+        }
+
+        private static IEnumerable<Aroma> ParseAromas(string source)
+        {
+            var document = XDocument.Load(source);
+            var blog = new Blog(document);
+            return blog.GetAromas();
+        }
+
+        private static IEnumerable<Receipt> ParseReceipts(string source)
+        {
+            var document = XDocument.Load(source);
+            var blog = new Blog(document);
+            var receipts = blog.GetReceipts();
+            return receipts.Where(r => r != null);
+        }
     }
 }

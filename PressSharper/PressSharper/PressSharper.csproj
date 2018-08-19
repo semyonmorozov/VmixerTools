@@ -47,7 +47,7 @@
     <Compile Include="Author.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Blog.cs" />
-    <Compile Include="Flavor.cs" />
+    <Compile Include="Aroma.cs" />
     <Compile Include="Page.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

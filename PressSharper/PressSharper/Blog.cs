@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -31,7 +32,7 @@ namespace PressSharper
             this.Attachments = Enumerable.Empty<Attachment>();
 
             this.InitializeChannelElement(doc);
-            
+
             if (channelElement == null)
             {
                 throw new XmlException("Missing channel element.");
@@ -83,7 +84,7 @@ namespace PressSharper
         private void InitializeAuthors()
         {
             this.Authors = this.channelElement.Descendants(WordpressNamespace + "author")
-                                              .Select(ParseAuthorElement);
+                .Select(ParseAuthorElement);
         }
 
         private static Author ParseAuthorElement(XElement authorElement)
@@ -93,7 +94,8 @@ namespace PressSharper
             var authorEmailElement = authorElement.Element(WordpressNamespace + "author_email");
             var authorDisplayNameElement = authorElement.Element(WordpressNamespace + "author_display_name");
 
-            if (authorIdElement == null || authorUsernameElement == null || authorEmailElement == null || authorDisplayNameElement == null)
+            if (authorIdElement == null || authorUsernameElement == null || authorEmailElement == null ||
+                authorDisplayNameElement == null)
             {
                 throw new XmlException("Unable to parse malformed author.");
             }
@@ -112,22 +114,61 @@ namespace PressSharper
         private void InitializeAttachments()
         {
             this.Attachments = this.channelElement.Elements("item")
-                                                  .Where(e => this.IsAttachmentItem(e))
-                                                  .Select(ParseAttachmentElement);
+                .Where(e => this.IsAttachmentItem(e))
+                .Select(ParseAttachmentElement);
         }
 
         public IEnumerable<Post> GetPosts()
         {
             return this.channelElement.Elements("item")
-                                      .Where(e => this.IsPostItem(e) && this.IsPublished(e))
-                                      .Select(ParsePostElement);
+                .Where(e => this.IsPostItem(e) && this.IsPublished(e))
+                .Select(ParsePostElement);
         }
 
         public IEnumerable<Page> GetPages()
         {
             return this.channelElement.Elements("item")
-                                      .Where(e => this.IsPageItem(e) && this.IsPublished(e))
-                                      .Select(ParsePageElement);
+                .Where(e => IsPageItem(e) && IsPublished(e))
+                .Select(ParsePageElement);
+        }
+
+        public IEnumerable<Receipt> GetReceipts()
+        {
+            return this.channelElement.Elements("item")
+                .Where(IsReceiptItem)
+                .Select(ParseReceiptElement);
+        }
+
+        public IEnumerable<Aroma> GetAromas()
+        {
+            return this.channelElement.Elements("item")
+                .Where(IsAromaItem)
+                .Select(ParseAromaElement);
+        }
+
+        public IEnumerable<ImageLink> GetImageLinks()
+        {
+            return this.channelElement.Elements("item")
+                .Where(IsImageLinkItem)
+                .Select(ParseImageLinkElement);
+        }
+
+        private bool IsImageLinkItem(XElement arg)
+        {
+            //TODO
+            return true;
+        }
+
+        private bool IsAromaItem(XElement xElement)
+        {
+            //TODO
+            return true;
+        }
+
+        private bool IsReceiptItem(XElement xElement)
+        {
+            //TODO
+            return true;
         }
 
         private bool IsPostItem(XElement itemElement)
@@ -180,7 +221,7 @@ namespace PressSharper
             var postBodyElement = postElement.Element(ContentNamespace + "encoded");
             var postPublishDateElement = postElement.Element(WordpressNamespace + "post_date");
             var postSlugElement = postElement.Element(WordpressNamespace + "post_name");
-            
+
             if (postTitleElement == null ||
                 postUsernameElement == null ||
                 postBodyElement == null ||
@@ -250,6 +291,84 @@ namespace PressSharper
             return post;
         }
 
+        private Receipt ParseReceiptElement(XElement receiptElement)
+        {
+            var receiptId = receiptElement.Element(WordpressNamespace + "post_id")?.Value;
+            
+            try
+            {
+                var name = receiptElement.Element("title")?.Value;
+                var description = GetPostmetaValue(receiptElement, "preview_text");
+                var infusion = GetPostmetaValue(receiptElement, "infusion");
+                var pg = GetPostmetaValue(receiptElement, "pg");
+                var vg = GetPostmetaValue(receiptElement, "vg");
+                var ratio = GetPostmetaValue(receiptElement, "vg_pg");
+
+                var flavorIds = Enumerable.Range(1, 15).Select(i => GetPostmetaValue(receiptElement, $"aroma_{i}"))
+                    .Where(i => !string.IsNullOrEmpty(i)).ToArray();
+                var flavorQuantitys = Enumerable.Range(1, 15)
+                    .Select(i => GetPostmetaValue(receiptElement, $"aroma_quantity_{i}"))
+                    .Where(i => !string.IsNullOrEmpty(i)).ToArray();
+
+                var aromas = Enumerable.Range(0, flavorIds.Length)
+                    .ToDictionary(i => new Aroma
+                        {
+                            Id = flavorIds[i].Split('\"')[1]
+                        },
+                        i => double.Parse(flavorQuantitys[i]));
+
+                return new Receipt
+                {
+                    Id = int.Parse(receiptId),
+                    Name = name,
+                    Description = description,
+                    Infusion = infusion,
+                    Pg = double.Parse(pg),
+                    Vg = double.Parse(vg),
+                    Ratio = ratio,
+                    Aromas = aromas
+                };
+            }
+            catch (Exception e)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(receiptId);
+                Console.WriteLine(e);
+                Console.ResetColor();
+            }
+
+            return null;
+        }
+
+        private Aroma ParseAromaElement(XElement aromaElement)
+        {
+            var title = aromaElement.Element("title")?.Value;
+            var id = aromaElement.Element(WordpressNamespace + "post_id")?.Value;
+            return new Aroma
+            {
+                Id = id,
+                Name = title
+            };
+        }
+
+        private ImageLink ParseImageLinkElement(XElement imageLinkItem)
+        {
+            var name = imageLinkItem.Element("guid")?.Value.Split('/').Last();
+            int receiptId = int.Parse(imageLinkItem.Element(WordpressNamespace +"post_parent")?.Value);
+            return new ImageLink
+            {
+                ReceiptId = receiptId,
+                Name = name
+            };
+        }
+
+        private static string GetPostmetaValue(XContainer postmeta, string key)
+        {
+            return postmeta.Elements(WordpressNamespace + "postmeta")
+                .FirstOrDefault(m => m.Element(WordpressNamespace + "meta_key")?.Value == key)?
+                .Element(WordpressNamespace + "meta_value")?.Value;
+        }
+
         private Page ParsePageElement(XElement pageElement)
         {
             var pageIdElement = pageElement.Element(WordpressNamespace + "post_id");
@@ -261,7 +380,7 @@ namespace PressSharper
             var pageSlugElement = pageElement.Element(WordpressNamespace + "post_name");
 
             if (pageIdElement == null ||
-                pageParentIdElement == null || 
+                pageParentIdElement == null ||
                 pageTitleElement == null ||
                 pageUsernameElement == null ||
                 pageBodyElement == null ||
