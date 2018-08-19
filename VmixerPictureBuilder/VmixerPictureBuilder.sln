@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VmixerTools", "VmixerTools\VmixerTools.csproj", "{14137019-194C-4223-ADB0-F44CFB4E207F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PressSharper", "..\PressSharper-master\PressSharper\PressSharper.csproj", "{71289E4E-9FA1-4AA0-9AA7-EAF54470F37A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14137019-194C-4223-ADB0-F44CFB4E207F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14137019-194C-4223-ADB0-F44CFB4E207F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14137019-194C-4223-ADB0-F44CFB4E207F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14137019-194C-4223-ADB0-F44CFB4E207F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71289E4E-9FA1-4AA0-9AA7-EAF54470F37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71289E4E-9FA1-4AA0-9AA7-EAF54470F37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71289E4E-9FA1-4AA0-9AA7-EAF54470F37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71289E4E-9FA1-4AA0-9AA7-EAF54470F37A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

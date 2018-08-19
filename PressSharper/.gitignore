@@ -1,0 +1,27 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
+*.user
+*.suo
+*.bak
+*.[Cc]ache
+*.log
+*.vspscc
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+UpgradeLog.XML
+_UpgradeReport_Files/
+
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+
+#NuGet
+packages/
+

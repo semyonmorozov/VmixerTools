@@ -1,0 +1,6 @@
+C:\Users\semyon\RiderProjects\VmixerPictureBuilder\VmixerTools\bin\Debug\VmixerTools.exe
+C:\Users\semyon\RiderProjects\VmixerPictureBuilder\VmixerTools\bin\Debug\VmixerTools.pdb
+C:\Users\semyon\RiderProjects\VmixerPictureBuilder\VmixerTools\obj\Debug\VmixerTools.csprojResolveAssemblyReference.cache
+C:\Users\semyon\RiderProjects\VmixerPictureBuilder\VmixerTools\obj\Debug\VmixerTools.exe
+C:\Users\semyon\RiderProjects\VmixerPictureBuilder\VmixerTools\obj\Debug\VmixerTools.pdb
+C:\Users\semyon\RiderProjects\VmixerPictureBuilder\VmixerTools\bin\Debug\PressSharper.dll

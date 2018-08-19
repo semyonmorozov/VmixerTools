@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="512166c5-208e-4f7a-afba-121007a494b1" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VmixerTools/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <marker date="1534673039609" expanded="true" signature="6:137" ph="..." />
+                <marker date="1534673039609" expanded="true" signature="160:1156" ph="{...}" />
+                <marker date="1534673039609" expanded="true" signature="189:468" ph="{...}" />
+                <marker date="1534673039609" expanded="true" signature="242:462" ph="{...}" />
+                <marker date="1534673039609" expanded="true" signature="501:1084" ph="{...}" />
+                <marker date="1534673039609" expanded="true" signature="554:1078" ph="{...}" />
+                <marker date="1534673039609" expanded="true" signature="922:1067" ph="{...}" />
+                <marker date="1534673039609" expanded="true" signature="1133:1154" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Blog.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Blog.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="130" column="9" lean-forward="true" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+              <folding>
+                <marker date="1476311917000" expanded="false" signature="6:107" ph="..." />
+                <marker date="1476311917000" expanded="true" signature="131:11390" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="155:11388" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="903:923" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="959:1327" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="1189:1285" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="1394:1661" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="1492:1581" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="1696:1874" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="1914:1991" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="2037:2126" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="2187:2455" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="2298:2410" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="2497:2682" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="2756:3736" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="3305:3410" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="3460:3697" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="3782:4041" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="4086:4320" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="4365:4599" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="4654:4766" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="4821:4933" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="4994:5112" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="5168:5280" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="5359:6181" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="5792:5901" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="5961:6138" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="6242:9407" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="6917:7020" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="7155:7516" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="7691:8588" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="7820:7955" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="8013:8268" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="8105:8248" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="8330:8574" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="8411:8554" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="8768:9371" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="8932:9357" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="9103:9339" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="9468:11061" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="10400:10503" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="10549:11024" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="11122:11219" ph="{...}" />
+                <marker date="1476311917000" expanded="true" signature="11283:11382" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receipt.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Receipt.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flavor.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Flavor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Post.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/187BC010-69EC-4E9E-A241-0A79627BD6CF/01/6b6e1b25/Page.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Blog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VmixerTools/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VmixerTools/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/187BC010-69EC-4E9E-A241-0A79627BD6CF/29/a684a51a/Blog.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/ndp/fx/src/XLinq/System/Xml/Linq/XLinq.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Receipt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Post.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Flavor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86AA975D-E32F-48AB-B2F5-BCF52FACA094/0a/8d33e9cc/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/187BC010-69EC-4E9E-A241-0A79627BD6CF/29/a684a51a/Blog.cs" />
+        <option value="$PROJECT_DIR$/VmixerTools/Program.cs" />
+        <option value="$PROJECT_DIR$/../PressSharper-master/PressSharper/Receipt.cs" />
+        <option value="$PROJECT_DIR$/../PressSharper-master/PressSharper/Flavor.cs" />
+        <option value="$PROJECT_DIR$/../PressSharper-master/PressSharper/Blog.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="25" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VmixerPictureBuilder (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VmixerPictureBuilder (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="PressSharper" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VmixerPictureBuilder (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="VmixerTools" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PressSharper-master/PressSharper/PressSharper.csproj" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/VmixerTools/bin/Debug/VmixerTools.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VmixerTools/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/VmixerTools/VmixerTools.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="512166c5-208e-4f7a-afba-121007a494b1" name="Default" comment="" />
+      <created>1534664175576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534664175576</updated>
+      <workItem from="1534664179283" duration="981000" />
+      <workItem from="1534665620932" duration="7192000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8173000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39331895" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3286638" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.3297414" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3609914" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/VmixerTools/Program.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/VmixerTools/Program.cs" initialLine="16">
+            <startOffsets>
+              <startOffset value="435" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="451" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/VmixerTools/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <marker date="1534673039609" expanded="true" signature="6:137" ph="..." />
+            <marker date="1534673039609" expanded="true" signature="160:1156" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="189:468" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="242:462" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="501:1084" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="554:1078" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="922:1067" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="1133:1154" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VmixerTools/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/ndp/fx/src/XLinq/System/Xml/Linq/XLinq.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="348" column="12" selection-start-line="348" selection-start-column="12" selection-end-line="348" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86AA975D-E32F-48AB-B2F5-BCF52FACA094/0a/8d33e9cc/Enumerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="1187" column="6" selection-start-line="1187" selection-start-column="6" selection-end-line="1187" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/187BC010-69EC-4E9E-A241-0A79627BD6CF/01/6b6e1b25/Page.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Flavor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/187BC010-69EC-4E9E-A241-0A79627BD6CF/29/a684a51a/Blog.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <marker date="1534671911581" expanded="true" signature="0:322" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1534671911581" expanded="false" signature="330:431" ph="..." />
+            <marker date="1534671911581" expanded="true" signature="455:9738" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="477:9736" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="1231:1243" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="1275:1559" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="1622:1809" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="1840:1986" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="2022:2085" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="2127:2202" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="2259:2489" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="2527:2707" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="2777:3515" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="3351:3508" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="3557:3802" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="3843:4141" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="3952:4060" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="4182:4480" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="4291:4399" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="4531:4634" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="4685:4788" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="4845:4954" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="5006:5109" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="5184:5751" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="5631:5744" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="5808:8112" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="6523:6779" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="6857:7542" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="7155:7266" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="7317:7534" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="7637:8087" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="7738:8079" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="7896:8069" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="8169:9377" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="9014:9370" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="9434:9548" ph="{...}" />
+            <marker date="1534671911581" expanded="true" signature="9608:9732" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Post.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Receipt.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VmixerTools/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <marker date="1534673039609" expanded="true" signature="6:137" ph="..." />
+            <marker date="1534673039609" expanded="true" signature="160:1156" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="189:468" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="242:462" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="501:1084" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="554:1078" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="922:1067" ph="{...}" />
+            <marker date="1534673039609" expanded="true" signature="1133:1154" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PressSharper-master/PressSharper/Blog.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="130" column="9" lean-forward="true" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+          <folding>
+            <marker date="1476311917000" expanded="false" signature="6:107" ph="..." />
+            <marker date="1476311917000" expanded="true" signature="131:11390" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="155:11388" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="903:923" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="959:1327" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="1189:1285" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="1394:1661" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="1492:1581" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="1696:1874" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="1914:1991" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="2037:2126" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="2187:2455" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="2298:2410" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="2497:2682" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="2756:3736" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="3305:3410" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="3460:3697" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="3782:4041" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="4086:4320" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="4365:4599" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="4654:4766" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="4821:4933" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="4994:5112" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="5168:5280" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="5359:6181" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="5792:5901" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="5961:6138" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="6242:9407" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="6917:7020" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="7155:7516" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="7691:8588" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="7820:7955" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="8013:8268" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="8105:8248" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="8330:8574" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="8411:8554" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="8768:9371" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="8932:9357" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="9103:9339" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="9468:11061" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="10400:10503" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="10549:11024" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="11122:11219" ph="{...}" />
+            <marker date="1476311917000" expanded="true" signature="11283:11382" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
