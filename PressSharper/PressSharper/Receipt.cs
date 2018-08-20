@@ -12,13 +12,8 @@ namespace PressSharper
         public double Pg { get; set; }
         public double Vg { get; set; }
         public string Ratio { get; set; }
-        public string ImageName { get; set; }
+        public string ImagePath { get; set; }
         public Dictionary<Aroma,double> Aromas { get; set; }
     }
-
-    public class ImageLink
-    {
-        public int ReceiptId { get; set; }
-        public string Name { get; set; }
-    }
+    
 }

@@ -48,6 +48,7 @@
     <Compile Include="Category.cs" />
     <Compile Include="Blog.cs" />
     <Compile Include="Aroma.cs" />
+    <Compile Include="ImageLink.cs" />
     <Compile Include="Page.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

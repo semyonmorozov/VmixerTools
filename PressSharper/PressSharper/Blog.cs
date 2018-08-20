@@ -353,7 +353,7 @@ namespace PressSharper
 
         private ImageLink ParseImageLinkElement(XElement imageLinkItem)
         {
-            var name = imageLinkItem.Element("guid")?.Value.Split('/').Last();
+            var name = imageLinkItem.Element("guid")?.Value.Split(new [] { "wp-content/" }, StringSplitOptions.None).Last();
             int receiptId = int.Parse(imageLinkItem.Element(WordpressNamespace +"post_parent")?.Value);
             return new ImageLink
             {

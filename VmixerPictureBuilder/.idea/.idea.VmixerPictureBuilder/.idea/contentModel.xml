@@ -9,6 +9,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Blog.cs" t="Include" />
       <e p="Category.cs" t="Include" />
+      <e p="ImageLink.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Page.cs" t="Include" />
       <e p="Post.cs" t="Include" />

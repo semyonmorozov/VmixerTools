@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
-using System.Net.Mime;
 using System.Xml.Linq;
 using PressSharper;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace VmixerTools
 {
@@ -12,9 +14,42 @@ namespace VmixerTools
     {
         public static void Main(string[] args)
         {
-            var receipts = ReceiptsParser.ParseReceipts("aromas.xml","receipts.xml","images.xml");
-         
-            Console.ReadKey();
+            var receipts = ReceiptsParser.ParseReceipts("aromas.xml", "receipts.xml", "images.xml")
+                .Where(i => i != null).ToArray();
+            DrawReceipts(receipts).Wait();
+        }
+
+        private static async Task DrawReceipts(IEnumerable<Receipt> receipts)
+        {
+            foreach (var receipt in receipts)
+            {
+                await DrawReceipt(receipt).ConfigureAwait(false);
+            }
+        }
+
+        private static async Task DrawReceipt(Receipt receipt)
+        {
+            await Task.Run(() =>
+            {
+                var imgPath = receipt.ImagePath;
+                Image bitMapImage;
+                try
+                {
+                    bitMapImage = Image.FromFile(imgPath);
+                }
+                catch (FileNotFoundException e)
+                {
+                    Console.WriteLine(e);
+                    return;
+                }
+
+                var graphicImage = Graphics.FromImage(bitMapImage);
+                graphicImage.SmoothingMode = SmoothingMode.AntiAlias;
+                graphicImage.DrawString("That's my boy!",
+                    new Font("Arial", 12, FontStyle.Bold),
+                    SystemBrushes.WindowText, new Point(100, 250));
+                bitMapImage.Save($"receiptImages/{imgPath.Split('/').Last()}");
+            }).ConfigureAwait(false);
         }
     }
 
@@ -32,12 +67,12 @@ namespace VmixerTools
                     aroma.Key.Name = aroms.FirstOrDefault(b => b.Id == aroma.Key.Id)?.Name;
                 }
 
-                receipt.ImageName = imageLinks.FirstOrDefault(l => l.ReceiptId == receipt.Id)?.Name;
+                receipt.ImagePath = imageLinks.FirstOrDefault(l => l.ReceiptId == receipt.Id)?.Name;
             }
 
             return receipts;
         }
-        
+
         private static IEnumerable<ImageLink> ParseImageLinks(string source)
         {
             var document = XDocument.Load(source);
