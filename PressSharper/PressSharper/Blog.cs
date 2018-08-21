@@ -332,8 +332,7 @@ namespace PressSharper
             catch (Exception e)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(receiptId);
-                Console.WriteLine(e);
+                Console.WriteLine($"{receiptId} {e}");
                 Console.ResetColor();
             }
 
@@ -354,12 +353,17 @@ namespace PressSharper
         private ImageLink ParseImageLinkElement(XElement imageLinkItem)
         {
             var name = imageLinkItem.Element("guid")?.Value.Split(new [] { "wp-content/" }, StringSplitOptions.None).Last();
-            int receiptId = int.Parse(imageLinkItem.Element(WordpressNamespace +"post_parent")?.Value);
-            return new ImageLink
-            {
-                ReceiptId = receiptId,
-                Name = name
-            };
+            var receiptId = int.Parse(imageLinkItem.Element(WordpressNamespace +"post_parent")?.Value);
+            if (name != null)
+                return new ImageLink
+                {
+                    ReceiptId = receiptId,
+                    Name = name
+                };
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"{receiptId} Не установлен путь до картинки");
+            Console.ResetColor();
+            return null;
         }
 
         private static string GetPostmetaValue(XContainer postmeta, string key)

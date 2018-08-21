@@ -31,20 +31,35 @@ namespace VmixerTools
         {
             await Task.Run(() =>
             {
-                var imgPath = receipt.ImagePath;
+            var imgPath = receipt.ImagePath;
                 Image bitMapImage;
-                try
-                {
-                    bitMapImage = Image.FromFile(imgPath);
-                }
-                catch (FileNotFoundException e)
-                {
-                    Console.WriteLine(e);
-                    return;
-                }
+            try
+            {
+                bitMapImage = Image.FromFile(imgPath);
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine($"ReceiptId: {receipt.Id} Неверно указан путь до картинки: {imgPath}");
+                return;
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine($"ReceiptId: {receipt.Id} не найдена кртинка для рецепта с таким Id");
+                return;
+            }
 
-                var graphicImage = Graphics.FromImage(bitMapImage);
-                graphicImage.SmoothingMode = SmoothingMode.AntiAlias;
+            Graphics graphicImage;
+            try
+            {
+                graphicImage = Graphics.FromImage(bitMapImage);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"ReceiptId: {receipt.Id} ImgPath: {imgPath} {e}");
+                return;
+            }
+
+            graphicImage.SmoothingMode = SmoothingMode.AntiAlias;
                 graphicImage.DrawString("That's my boy!",
                     new Font("Arial", 12, FontStyle.Bold),
                     SystemBrushes.WindowText, new Point(100, 250));
@@ -66,7 +81,7 @@ namespace VmixerTools
                 {
                     aroma.Key.Name = aroms.FirstOrDefault(b => b.Id == aroma.Key.Id)?.Name;
                 }
-
+                
                 receipt.ImagePath = imageLinks.FirstOrDefault(l => l.ReceiptId == receipt.Id)?.Name;
             }
 
